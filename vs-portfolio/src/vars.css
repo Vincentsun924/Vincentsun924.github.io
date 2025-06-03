@@ -1,0 +1,10 @@
+/* this file just lets us define our variables in one place and lets us import them when needed */
+:root {
+    --color-text: #fff;
+    --color-primary: #576cbc;
+    --color-secondary: #19376d;
+    --color-dark: #0b2447;
+    --color-bg: #04152d;
+
+    --font-robot: roboto;
+}

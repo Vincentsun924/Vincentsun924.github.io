@@ -1,12 +1,11 @@
 /* we need to import this so that we can reference the colors in vars */
 @import "./vars.css";
 
+
 /* name changed to app.models.css to fit the format */
 .App {
     background-color: var(--color-bg);
     width: 100%;
     height: 100%;
-
-    color: white;
-
 }
+

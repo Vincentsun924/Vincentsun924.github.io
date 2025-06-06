@@ -71,6 +71,7 @@
     }
     .menuOpen {
         display: flex;
+        /* above everything else */
         z-index: 1;
     }
 }

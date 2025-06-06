@@ -1,7 +1,7 @@
 //checks if some item is open or in use or not
 import React, {useState} from "react";
 import styles from "./Navbar.module.css";
-import { getImageUrl } from "../../utils";
+
 
 
 export const Navbar = () => {
@@ -19,13 +19,16 @@ export const Navbar = () => {
             <div className = {styles.menu}>
                 <img className={styles.menuBtn} src={
                     menuOpen
-                    ? "/assets/menubar.png"
-                    : "/assets/closeIcon.png"} 
+                    ? "/assets/closeIcon.png"
+                    : "/assets/menubar.png"}
                     alt = "menu-button"
                     onClick={() => setMenuOpen(!menuOpen)}
                     />
                 {/* string interpolation $, allows us to add another className css and the "&&" just says that if menu is false then the stuff after is not applied and if menuOpen is true then it is applied */}
-                <ul className = {`${styles.menuItems} ${menuOpen && styles.menuOpen}`} onClick = {() => setMenuOpen(false)}>
+                <ul className = {`${styles.menuItems} ${menuOpen && styles.menuOpen}`} 
+                // makes it close when a page is clicked
+                onClick = {() => setMenuOpen(false)}
+                >
                     <li> 
                         <a href = "#About"> About</a> 
                     </li>
@@ -33,7 +36,7 @@ export const Navbar = () => {
                         <a href = "#Experience"> Experience</a> 
                     </li>
                     <li> 
-                        <a href = "#Project"> Projects</a> 
+                        <a href = "#Project">Projects</a> 
                     </li>
                     <li> 
                         <a href = "#Contact"> Contact</a> 

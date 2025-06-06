@@ -1,7 +1,12 @@
 
 import styles from './App.module.css';
-import { Hero } from './components/Navbar/Hero/Hero';
+import { About } from './components/About.jsx/About';
+import { Hero } from './components/Hero/Hero';
 import { Navbar } from './components/Navbar/Navbar';
+import { Projects } from './components/Projects/Projects';
+import { Skills } from './components/Skills/Skills';
+
+
 
 
 
@@ -10,6 +15,10 @@ function App() {
     <div className = {styles.App}> 
       <Navbar/>
       <Hero />
+      <About />
+      <Skills />
+      <Projects />rrrr
+      
     </div>
   );
 }
